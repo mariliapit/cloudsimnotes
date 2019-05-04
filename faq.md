@@ -1,6 +1,6 @@
-## policies n algorithms
+# policies n algorithms
 
-# What are the default scheduling policies n how can i change them?
+## What are the default scheduling policies n how can i change them?
 
 cloudsim models scheduling of cpu resources at 2 levels: host n VM.
 at host level, the host shares fractions of processors to each VM running on it.this scheduler is called VmScheduler.
@@ -13,7 +13,7 @@ in both levels, theres two default policies: space shared and time shared.
 space shared: cloudlets/mvs are exclusively allocated. if there are more VMs or cloudlets than processors, they will have to wait on a queue until resources are free.
 time shared: fractions of processors are shared among VMs and cloudlets, so they all run simultaneously.
 
-# What class should I modify to implement my algorithm?
+## What class should I modify to implement my algorithm?
 
 There are several places in CloudSim where you can implement your algorithm depending on what the algorithm is intended to do. Here are several examples of classes that you may need to modify or extend:
 
